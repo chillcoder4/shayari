@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shayari Gem — Romantic Shayari Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Shayari Gem 💫</h1>
+      <p class="tag">Romantic suggestions, translations, and dreamy images — powered by Gemini (server side).</p>
+    </header>
+
+    <section class="input-section">
+      <label for="shayari">Apni shayari likho (or paste) — we'll make it shine ✨</label>
+      <textarea id="shayari" placeholder="Tum bin jeena kya..." rows="4"></textarea>
+      <div class="controls">
+        <input id="name" placeholder="Your display name (optional)">
+        <button id="generate">Suggest & Create</button>
+      </div>
+    </section>
+
+    <section id="results" class="results hidden">
+      <h2>Original + Translations</h2>
+      <div class="translations">
+        <div><h3>Original</h3><pre id="origText"></pre></div>
+        <div><h3>Hindi (Devanagari)</h3><pre id="hinText"></pre></div>
+        <div><h3>English</h3><pre id="engText"></pre></div>
+      </div>
+
+      <h2>Suggestions (2–3 lines)</h2>
+      <ul id="suggestions" class="suggestions"></ul>
+
+      <h2>Generated Images</h2>
+      <div id="images" class="images"></div>
+
+      <div class="actions">
+        <button id="copyAll">Copy All</button>
+        <button id="downloadZip">Download ZIP</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Designed with ❤️ — drop your details in the name field to personalise results.</small>
+    </footer>
+  </main>
+
+<script src="app.js"></script>
+</body>
+</html>
